@@ -1,0 +1,137 @@
+{
+  "name": "seed-7470-exp-sfl_333ms_motes_14_top_heuristic_delta_030_",
+  "tsch": {
+    "generated_packets": 1,
+    "queue_size": 8,
+    "r_max": 4
+  },
+  "feasibility": {
+    "epsilon": 1e-07
+  },
+  "seed": 7470,
+  "throughput": {
+    "epsilon": 1e-07
+  },
+  "sf-heuristic": {
+    "heuristic": "heuristic",
+    "delta": 0.3,
+    "testbed_results": {
+      "reliabilities": {
+        "TSCH_SLOTBONDING_50_KBPS_PHY": "testbed-results/reliability-TSCH_SLOTBONDING_50_KBPS_PHY.json",
+        "TSCH_SLOTBONDING_1000_KBPS_PHY": "testbed-results/reliability-TSCH_SLOTBONDING_1000_KBPS_PHY.json"
+      },
+      "rates": {
+        "TSCH_SLOTBONDING_50_KBPS_PHY": 50,
+        "TSCH_SLOTBONDING_1000_KBPS_PHY": 1000
+      },
+      "slots": {
+        "TSCH_SLOTBONDING_50_KBPS_PHY": 4,
+        "TSCH_SLOTBONDING_1000_KBPS_PHY": 1
+      },
+      "root": "nuc10-33"
+    }
+  },
+  "heuristic": {
+    "manner": "combo"
+  },
+  "ga": {
+    "design": "double-selection",
+    "type": "make-not-feasible-new-variable-slots",
+    "max_pdr": 1.0,
+    "p_files_dir": "p_files/output_A_10_Q_10_S_40_RMAX_4",
+    "mutation_idp_prob": 0.05,
+    "infeasible_airtime_val": 1000000,
+    "hall_of_fame_size": 10,
+    "invalid_tree_throughput_val": -100,
+    "results_file_prefix": "ga",
+    "results_dir": "solutions/",
+    "min_pdr": 0.3,
+    "crossover_prob": 1.0,
+    "genes_per_node_with_topology": 3,
+    "infeasible_ind_throughput_val": -50,
+    "genes_per_node_no_topology": 2,
+    "invalid_slots_throughput_val": -50,
+    "pop_size": 100,
+    "mutation_prob": 1.0,
+    "generations": 100,
+    "output_x_generations": 1,
+    "parent_selection": {
+      "elitism": {
+        "percentage": 0.1
+      },
+      "offspring": {},
+      "tournament": {
+        "size": 2
+      },
+      "choice": "tournament"
+    },
+    "survivor_selection": {
+      "offspring": {},
+      "tournament": {
+        "size": 10
+      },
+      "elitism": {
+        "percentage": 0.1
+      },
+      "choice": "elitism"
+    }
+  },
+  "radio": {
+    "airtimes": {
+      "TSCH_SLOTBONDING_50_KBPS_PHY": {
+        "idle": 2.2,
+        "txDataNoAck": 20.8,
+        "rxDataTxAck": 24.16,
+        "txDataRxNack": 24.16,
+        "txDataRxAck": 24.16,
+        "rxDataTxNack": 24.16
+      },
+      "TSCH_SLOTBONDING_1000_KBPS_PHY": {
+        "idle": 2.2,
+        "txDataNoAck": 1.024,
+        "rxDataTxAck": 1.192,
+        "txDataRxNack": 1.192,
+        "txDataRxAck": 1.192,
+        "rxDataTxNack": 1.192
+      }
+    }
+  },
+  "modulations": {
+    "modulations_file": "simulator/SimEngine/modulation_files/modulation_stable_mcs2.json"
+  },
+  "topology": {
+    "root": 0,
+    "topology_file": "topologies/simulator-topology.json"
+  },
+  "simulator": {
+    "numRuns": 1,
+    "convergeFirst": 1,
+    "numChans": 3,
+    "numMotes": 14,
+    "topology": "random",
+    "nrMinimalCells": 0,
+    "trafficGenerator": "ilp",
+    "sporadicTraffic": 0,
+    "changeParent": 0,
+    "backoffMinExp": 1,
+    "backoffMaxExp": 1,
+    "sf": "ilp",
+    "minCellsMSF": 1,
+    "packetSize": 127,
+    "subGHz": 1,
+    "individualModulations": 1,
+    "pkPeriodVar": 0,
+    "modulationConfig": "MCS234s10ms",
+    "slotDuration": 0.09,
+    "slotframeLength": 37,
+    "numCyclesPerRun": 90,
+    "cooldown": 666.6666666666667,
+    "noNewInterference": 0,
+    "noPropagationLoss": 0,
+    "settlingTime": 120,
+    "maxToConverge": 6060,
+    "stableNeighbors": 1,
+    "measuredData": 1,
+    "modulationFile": "modulation_stable_mcs2.json"
+  }
+}

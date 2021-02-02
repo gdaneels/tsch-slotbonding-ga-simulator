@@ -1,0 +1,248 @@
+{
+  "modulations": {
+    "modulations": [
+      "QPSK_FEC_1_2_FR_2",
+      "QPSK_FEC_1_2",
+      "QPSK_FEC_3_4"
+    ],
+    "modulationRates": {
+      "QPSK_FEC_1_2_FR_2": 50,
+      "QPSK_FEC_1_2": 100,
+      "QPSK_FEC_3_4": 150
+    },
+    "modulationMinRSSI": {
+      "QPSK_FEC_1_2_FR_2": -111.4,
+      "QPSK_FEC_1_2": -111.4,
+      "QPSK_FEC_3_4": -108.6
+    },
+    "modulationStableRSSI": {
+      "QPSK_FEC_1_2_FR_2": -116.45,
+      "QPSK_FEC_1_2": -110.5,
+      "QPSK_FEC_3_4": -107.65
+    }
+  },
+  "configurations": {
+    "MCS234s5ms": {
+      "allowedModulations": [
+        "QPSK_FEC_1_2_FR_2",
+        "QPSK_FEC_1_2",
+        "QPSK_FEC_3_4"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_1_2_FR_2": 7,
+        "QPSK_FEC_1_2": 5,
+        "QPSK_FEC_3_4": 4
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 5
+    },
+    "MCS234s10ms": {
+      "allowedModulations": [
+        "QPSK_FEC_1_2_FR_2",
+        "QPSK_FEC_1_2",
+        "QPSK_FEC_3_4"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_1_2_FR_2": 4,
+        "QPSK_FEC_1_2": 3,
+        "QPSK_FEC_3_4": 2
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 10
+    },
+    "MCS234s20ms": {
+      "allowedModulations": [
+        "QPSK_FEC_1_2_FR_2",
+        "QPSK_FEC_1_2",
+        "QPSK_FEC_3_4"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_1_2_FR_2": 2,
+        "QPSK_FEC_1_2": 2,
+        "QPSK_FEC_3_4": 1
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 20
+    },
+    "MCS234s40ms": {
+      "allowedModulations": [
+        "QPSK_FEC_1_2_FR_2",
+        "QPSK_FEC_1_2",
+        "QPSK_FEC_3_4"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_1_2_FR_2": 1,
+        "QPSK_FEC_1_2": 1,
+        "QPSK_FEC_3_4": 1
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 40
+    },
+    "MCS234s4x10ms": {
+      "allowedModulations": [
+        "QPSK_FEC_1_2_FR_2",
+        "QPSK_FEC_1_2",
+        "QPSK_FEC_3_4"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_1_2_FR_2": 4,
+        "QPSK_FEC_1_2": 4,
+        "QPSK_FEC_3_4": 4
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 10
+    },
+    "MCS2s40ms": {
+      "allowedModulations": [
+        "QPSK_FEC_1_2_FR_2"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_1_2_FR_2": 1
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 40
+    },
+    "MCS3s30ms": {
+      "allowedModulations": [
+        "QPSK_FEC_1_2"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_1_2": 1,
+        "QPSK_FEC_1_2_FR_2": 2
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 30
+    },
+    "MCS4s20ms": {
+      "allowedModulations": [
+        "QPSK_FEC_3_4"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_3_4": 1,
+        "QPSK_FEC_1_2_FR_2": 2
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 20
+    },
+    "MCS2s5ms": {
+      "allowedModulations": [
+        "QPSK_FEC_1_2_FR_2"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_1_2_FR_2": 7
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 5
+    },
+    "MCS3s5ms": {
+      "allowedModulations": [
+        "QPSK_FEC_1_2"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_1_2": 5,
+        "QPSK_FEC_1_2_FR_2": 7
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 5
+    },
+    "MCS4s5ms": {
+      "allowedModulations": [
+        "QPSK_FEC_3_4"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_3_4": 4,
+        "QPSK_FEC_1_2_FR_2": 7
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 5
+    },
+    "MCS24s10ms": {
+      "allowedModulations": [
+        "QPSK_FEC_1_2_FR_2",
+        "QPSK_FEC_3_4"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_1_2_FR_2": 4,
+        "QPSK_FEC_3_4": 2
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 10
+    },
+    "MCS24s40ms": {
+      "allowedModulations": [
+        "QPSK_FEC_1_2_FR_2",
+        "QPSK_FEC_3_4"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_1_2_FR_2": 1,
+        "QPSK_FEC_3_4": 1
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 40
+    },
+    "MCS2s10ms": {
+      "allowedModulations": [
+        "QPSK_FEC_1_2_FR_2"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_1_2_FR_2": 4
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 10
+    },
+    "MCS3s10ms": {
+      "allowedModulations": [
+        "QPSK_FEC_1_2"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_1_2": 3,
+        "QPSK_FEC_1_2_FR_2": 4
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 10
+    },
+    "MCS4s10ms": {
+      "allowedModulations": [
+        "QPSK_FEC_3_4"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_3_4": 2,
+        "QPSK_FEC_1_2_FR_2": 4
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 10
+    },
+    "MCS3s20ms": {
+      "allowedModulations": [
+        "QPSK_FEC_1_2"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_1_2_FR_2": 2,
+        "QPSK_FEC_1_2": 2
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 20
+    },
+    "MCS3s40ms": {
+      "allowedModulations": [
+        "QPSK_FEC_1_2"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_1_2_FR_2": 1,
+        "QPSK_FEC_1_2": 1
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 40
+    },
+    "MCS2s20ms": {
+      "allowedModulations": [
+        "QPSK_FEC_1_2_FR_2"
+      ],
+      "modulationSlots": {
+        "QPSK_FEC_1_2_FR_2": 2
+      },
+      "minimalCellModulation": "QPSK_FEC_1_2_FR_2",
+      "slotLength": 20
+    }
+  }
+}

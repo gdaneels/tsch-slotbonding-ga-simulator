@@ -1,0 +1,99 @@
+{
+  "name": "final-settings",
+  "tsch": {
+    "generated_packets": 1,
+    "queue_size": 8,
+    "r_max": 4
+  },
+  "feasibility": {
+    "epsilon": 1e-07
+  },
+  "seed": 364,
+  "throughput": {
+    "epsilon": 1e-07
+  },
+  "sf-heuristic": {
+    "heuristic": "heuristic",
+    "delta": 0.02,
+    "testbed_results": {
+      "only_50": 0,
+      "reliabilities": {
+        "TSCH_SLOTBONDING_50_KBPS_PHY": "/scratch/antwerpen/202/vsc20268/testbed-results/sensing-12-motes-new-70/reliability-TSCH_SLOTBONDING_50_KBPS_PHY.json",
+        "TSCH_SLOTBONDING_1000_KBPS_PHY": "/scratch/antwerpen/202/vsc20268/testbed-results/sensing-12-motes-new-70/reliability-TSCH_SLOTBONDING_1000_KBPS_PHY_3_4.json"
+      },
+      "rates": {
+        "TSCH_SLOTBONDING_50_KBPS_PHY": 50,
+        "TSCH_SLOTBONDING_1000_KBPS_PHY": 1000
+      },
+      "slots": {
+        "TSCH_SLOTBONDING_50_KBPS_PHY": 4,
+        "TSCH_SLOTBONDING_1000_KBPS_PHY": 1
+      },
+      "root": "nuc9-10"
+    }
+  },
+  "heuristic":{
+    "manner": "combo"
+  },
+  "ga": {
+    "design": "double-selection",
+    "type": "make-not-feasible-new-variable-slots",
+    "max_pdr": 1.0,
+    "p_files_dir": "/scratch/antwerpen/202/vsc20268/output_A_10_Q_10_S_40_RMAX_4",
+    "mutation_idp_prob": 0.05,
+    "infeasible_airtime_val": 1000000,
+    "hall_of_fame_size": 10,
+    "invalid_tree_throughput_val": -100,
+    "results_file_prefix": "ga",
+    "results_dir": "solutions/",
+    "min_pdr": 0.001,
+    "crossover_prob": 1.0,
+    "genes_per_node_with_topology": 3,
+    "infeasible_ind_throughput_val": -50,
+    "genes_per_node_no_topology": 2,
+    "invalid_slots_throughput_val": -50,
+    "pop_size": 100,
+    "mutation_prob": 1.0,
+    "generations": 10000,
+    "output_x_generations": 100,
+    "parent_selection": {
+        "elitism": {"percentage": 0.1},
+        "offspring": {},
+        "tournament": {"size": 2},
+        "choice": "tournament"
+    },
+    "survivor_selection": {
+        "offspring": {},
+        "tournament": {"size": 10},
+        "elitism": {"percentage": 0.1},
+        "choice": "elitism"
+    }
+  },
+  "radio": {
+    "airtimes": {
+      "TSCH_SLOTBONDING_50_KBPS_PHY": {
+        "idle": 2.2,
+        "txDataNoAck": 20.8,
+        "rxDataTxAck": 24.16,
+        "txDataRxNack": 24.16,
+        "txDataRxAck": 24.16,
+        "rxDataTxNack": 24.16
+      },
+      "TSCH_SLOTBONDING_1000_KBPS_PHY": {
+        "idle": 2.2,
+        "txDataNoAck": 1.040,
+        "rxDataTxAck": 1.208,
+        "txDataRxNack": 1.208,
+        "txDataRxAck": 1.208,
+        "rxDataTxNack": 1.208
+      }
+    }
+  },
+  "modulations": {
+    "modulations_file": "simulator/SimEngine/modulation_files/modulation_stable_mcs2.json"
+  },
+  "topology": {
+    "root": 0,
+    "topology_file": "topologies/simulator-topology.json"
+  }
+}

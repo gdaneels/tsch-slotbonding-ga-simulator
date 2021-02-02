@@ -1,0 +1,131 @@
+{
+  "heuristic": {
+    "manner": "combo"
+  },
+  "name": "seed-478-exp-sfl_120ms_motes_14_top_heuristic_delta_001_",
+  "tsch": {
+    "generated_packets": 1,
+    "queue_size": 10,
+    "r_max": 4
+  },
+  "simulator": {
+    "individualModulations": 1,
+    "changeParent": 0,
+    "noPropagationLoss": 0,
+    "numMotes": 5,
+    "packetSize": 127,
+    "backoffMinExp": 1,
+    "backoffMaxExp": 1,
+    "modulationConfig": "MCS234s10ms",
+    "cooldown": 6000.0,
+    "slotframeLength": 12,
+    "settlingTime": 120,
+    "noNewInterference": 0,
+    "convergeFirst": 1,
+    "stableNeighbors": 1,
+    "pkPeriodVar": 0,
+    "numCyclesPerRun": 2500,
+    "numRuns": 1,
+    "sporadicTraffic": 0,
+    "nrMinimalCells": 0,
+    "numChans": 3,
+    "trafficGenerator": "ilp",
+    "topology": "random",
+    "measuredData": 1,
+    "minCellsMSF": 1,
+    "modulationFile": "modulation_stable_mcs2.json",
+    "slotDuration": 0.01,
+    "subGHz": 1,
+    "maxToConverge": 6060,
+    "sf": "ilp"
+  },
+  "sf-heuristic": {
+    "testbed_results": {},
+    "heuristic": "heuristic",
+    "delta": 0.01
+  },
+  "feasibility": {
+    "epsilon": 1e-07
+  },
+  "seed": 478,
+  "throughput": {
+    "epsilon": 1e-07
+  },
+  "ga": {
+    "max_pdr": 1.0,
+    "survivor_selection": {
+      "tournament": {
+        "size": 10
+      },
+      "offspring": {},
+      "elitism": {
+        "percentage": 0.1
+      },
+      "choice": "elitism"
+    },
+    "design": "double-selection",
+    "pop_size": 100,
+    "min_pdr": 0.7,
+    "hall_of_fame_size": 10,
+    "results_dir": "solutions/",
+    "crossover_prob": 1.0,
+    "output_x_generations": 100,
+    "genes_per_node_with_topology": 3,
+    "type": "make-not-feasible-new-variable-slots",
+    "invalid_slots_throughput_val": -50,
+    "infeasible_airtime_val": 1000000,
+    "results_file_prefix": "ga",
+    "parent_selection": {
+      "tournament": {
+        "size": 2
+      },
+      "offspring": {},
+      "elitism": {
+        "percentage": 0.1
+      },
+      "choice": "tournament"
+    },
+    "infeasible_ind_throughput_val": -50,
+    "mutation_prob": 1.0,
+    "p_files_dir": "p_files/output_A_10_Q_10_S_40_RMAX_4",
+    "mutation_idp_prob": 0.05,
+    "invalid_tree_throughput_val": -100,
+    "genes_per_node_no_topology": 2,
+    "generations": 200
+  },
+  "radio": {
+    "airtimes": {
+      "QPSK_FEC_1_2": {
+        "idle": 3.0,
+        "txDataNoAck": 12.12,
+        "rxDataTxAck": 14.24,
+        "txDataRxNack": 14.24,
+        "txDataRxAck": 14.24,
+        "rxDataTxNack": 14.24
+      },
+      "QPSK_FEC_1_2_FR_2": {
+        "idle": 3.0,
+        "txDataNoAck": 22.28,
+        "rxDataTxAck": 26.56,
+        "txDataRxNack": 26.56,
+        "txDataRxAck": 26.56,
+        "rxDataTxNack": 26.56
+      },
+      "QPSK_FEC_3_4": {
+        "idle": 3.0,
+        "txDataNoAck": 8.73,
+        "rxDataTxAck": 10.13,
+        "txDataRxNack": 10.13,
+        "txDataRxAck": 10.13,
+        "rxDataTxNack": 10.13
+      }
+    }
+  },
+  "modulations": {
+    "modulations_file": "simulator/SimEngine/modulation_files/modulation_stable_mcs2.json"
+  },
+  "topology": {
+    "root": 0,
+    "topology_file": "topologies/simulator-topology.json"
+  }
+}

@@ -1,0 +1,58 @@
+------- Transmission at ASN 14: 
+* Mote 1 to mote 0
+** Start TX (ts 0): 2.0000
+** End TX (ts 2): 12.2000
+** TX Duration: 10.2000
+***** PDR WITH interference
+*** Chunks (# 1): [(2.0, 12.2)] 
+*** SINR chunk (2.0, 12.2) interference = 6.5612118122 
+*** Chunk size bytes: 127.5000000000 
+*** Chunk (2.0, 12.2) has Rounded PDR = 0.0000000000 
+*** Chunk (2.0, 12.2) has PDR = 0.0000000000 
+*** Total PDR = 0.00000000000000000000
+***** PDR WITHOUT interference
+*** SINR no interference = 6.5612118122 
+*** Chunk size bytes: 127.5000000000 
+*** Chunk (2.0, 12.2) has Rounded PDR = 0.0000000000 
+*** Chunk (2.0, 12.2) has PDR = 0.0000000000 
+*** Total PDR = 0.00000000000000000000
+***** Equal PDRs
+1.0------- Transmission at ASN 14: 
+* Mote 1 to mote 0
+** Start TX (ts 0): 2.0000
+** End TX (ts 2): 12.2000
+** TX Duration: 10.2000
+***** PDR WITH interference
+*** Chunks (# 1): [(2.0, 12.2)] 
+*** SINR chunk (2.0, 12.2) interference = 6.5612118122 
+*** Chunk size bytes: 127.5000000000 
+*** Chunk (2.0, 12.2) has Rounded PDR = 0.0000000000 
+*** Chunk (2.0, 12.2) has PDR = 0.0000000000 
+*** Total PDR = 0.00000000000000000000
+***** PDR WITHOUT interference
+*** SINR no interference = 6.5612118122 
+*** Chunk size bytes: 127.5000000000 
+*** Chunk (2.0, 12.2) has Rounded PDR = 0.0000000000 
+*** Chunk (2.0, 12.2) has PDR = 0.0000000000 
+*** Total PDR = 0.00000000000000000000
+***** Equal PDRs
+1.0------- Transmission at ASN 14: 
+* Mote 1 to mote 0
+** Start TX (ts 0): 2.0000
+** End TX (ts 2): 12.2000
+** TX Duration: 10.2000
+***** PDR WITH interference
+*** Chunks (# 1): [(2.0, 12.2)] 
+*** SINR chunk (2.0, 12.2) interference = 6.5612118122 
+*** Chunk size bytes: 127.5000000000 
+*** Chunk (2.0, 12.2) has Rounded PDR = 0.0000000000 
+*** Chunk (2.0, 12.2) has PDR = 0.0000000000 
+*** Total PDR = 0.00000000000000000000
+***** PDR WITHOUT interference
+*** SINR no interference = 6.5612118122 
+*** Chunk size bytes: 127.5000000000 
+*** Chunk (2.0, 12.2) has Rounded PDR = 0.0000000000 
+*** Chunk (2.0, 12.2) has PDR = 0.0000000000 
+*** Total PDR = 0.00000000000000000000
+***** Equal PDRs
+1.0

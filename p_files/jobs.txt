@@ -1,0 +1,5 @@
+python mc-probability.py -a 3 -q 3 -s 3 -r 3 -p 1000 > "output_A_3_Q_3_S_3_RMAX_3/p_1000.csv"
+python mc-probability.py -a 3 -q 3 -s 3 -r 3 -p 1000 > "output_A_3_Q_3_S_3_RMAX_3/p_1000.csv"
+python mc-probability.py -a 3 -q 3 -s 3 -r 3 -p 1000 > "output_A_3_Q_3_S_3_RMAX_3/p_1000.csv"
+python mc-probability.py -a 3 -q 3 -s 3 -r 3 -p 1000 > "output_A_3_Q_3_S_3_RMAX_3/p_1000.csv"
+python mc-probability.py -a 3 -q 3 -s 3 -r 3 -p 1000 > "output_A_3_Q_3_S_3_RMAX_3/p_1000.csv"

@@ -1,0 +1,88 @@
+{
+  "name": "default",
+  "ga": {
+    "exhaustive": 0,
+    "generations": 5,
+    "pop_size": 20,
+    "type": "",
+    "crossover_prob": 0.9,
+    "mutation_prob": 0.4,
+    "mutation_idp_prob": 0.2,
+    "hall_of_fame_size": 3,
+    "min_pdr": 0.7,
+    "max_pdr": 1.0,
+    "p_files_dir": "p_files/output_A_11_Q_11_S_40_RMAX_3",
+    "invalid_tree_throughput_val": -100,
+    "invalid_slots_throughput_val": -50,
+    "infeasible_ind_throughput_val": -50,
+    "infeasible_airtime_val": 10000,
+    "genes_per_node_no_topology": 2,
+    "genes_per_node_with_topology": 3,
+    "results_dir": "solutions/",
+    "results_file_prefix": "ga",
+    "replacement": {
+      "choice": "tournament",
+      "pop_best": {},
+      "tournament": {"size": 2},
+      "elitism": {"percentage": 0.1}
+    }
+  },
+  "tsch": {
+    "r_max": 3,
+    "queue_size": 10,
+    "generated_packets": 1
+  },
+  "topology": {
+    "topology_file": "topologies/simulator-topology.json",
+    "root": 0
+  },
+  "modulations": {
+    "modulations_file": "simulator/SimEngine/modulation.json"
+  },
+  "radio": {
+    "airtimes": {
+      "QAM_16_FEC_3_4": 6.03,
+      "QAM_16_FEC_1_2": 8.08,
+      "QPSK_FEC_3_4": 10.13,
+      "QPSK_FEC_1_2": 14.24,
+      "QPSK_FEC_1_2_FR_2": 26.56
+    }
+  },
+  "throughput": {
+    "epsilon": 0.0000001
+  },
+  "feasibility": {
+    "epsilon": 0.0000001
+  },
+  "simulator": {
+    "numRuns": 1,
+    "convergeFirst": 1,
+    "numChans": 5,
+    "numMotes": 15,
+    "topology": "random",
+    "nrMinimalCells": 0,
+    "trafficGenerator": "ilp",
+    "sporadicTraffic": 0,
+    "changeParent": 0,
+    "backoffMinExp": 1,
+    "backoffMaxExp": 1,
+    "sf": "ilp",
+    "minCellsMSF": 1,
+    "packetSize": 127,
+    "subGHz": 1,
+    "individualModulations": 1,
+    "pkPeriodVar": 0,
+    "cooldown": 6000.0,
+    "modulationConfig": "ILP10msFR",
+    "slotDuration": 0.01,
+    "slotframeLength": 15,
+    "numCyclesPerRun": 450000,
+    "noNewInterference": 1,
+    "noPropagationLoss": 0,
+    "settlingTime": 120,
+    "maxToConverge": 6060,
+    "stableNeighbors": 1,
+    "stableNeighborPDR": 0.7
+  },
+  "seed": 5
+}

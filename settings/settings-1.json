@@ -1,0 +1,46 @@
+{
+  "ga": {
+    "building_topologies": 0,
+    "generations": 1000,
+    "pop_size": 100,
+    "crossover_prob": 0.2,
+    "mutation_prob": 0.4,
+    "mutation_idp_prob": 0.2,
+    "hall_of_fame_size": 10,
+    "p_files_dir": "p_files/output_A_11_Q_11_S_40_RMAX_3",
+    "min_pdr": 0.7,
+    "max_pdr": 1.0,
+    "invalid_tree_throughput_val": -100,
+    "invalid_slots_throughput_val": -50,
+    "infeasible_ind_throughput_val": -50,
+    "infeasible_airtime_val": 10000,
+    "genes_per_node_no_topology": 2,
+    "genes_per_node_with_topology": 3,
+    "results_dir": "solutions/",
+    "results_file_prefix": "ga"
+  },
+  "tsch": {
+    "r_max": 3,
+    "queue_size": 10,
+    "generated_packets": 1
+  },
+  "topology": {
+    "topology_file": "topologies/topology-1.json",
+    "root": 0
+  },
+  "radio": {
+    "airtimes": {
+      "QAM_16_FEC_3_4": 6.03,
+      "QAM_16_FEC_1_2": 8.08,
+      "QPSK_FEC_3_4": 10.13,
+      "QPSK_FEC_1_2": 14.24,
+      "QPSK_FEC_1_2_FR_2": 26.56
+    }
+  },
+  "throughput": {
+    "epsilon": 0.0000001
+  },
+  "feasibility": {
+    "epsilon": 0.0000001
+  }
+}
